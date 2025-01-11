@@ -7,7 +7,7 @@
 
 ## Dataset
 - The source dataset is [Rplan Dataset](http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html), it is a dataset consists of about 80k floor plans as images.
-- First, we converted the image-based RPlan dataset to a geometry-based dataset, this conversion helped us with some benefits:
+- First, we converted the image-based RPlan dataset to a [shapely geometry-based dataset](https://www.kaggle.com/datasets/mohamedhassan1911/rplane-shapely/data), this conversion helped us with some benefits:
   - Accurate Representation.
   - Geometric Operations such as buffers, and intersections.
 - Then, we created a customized dataset as **Graphs** to be a new version of the Rplan floor plans. This conversion helped us train the **GAT-Net** model. you can see this work from this [notebook](https://github.com/mo7amed7assan1911/Floor_Plan_Generation_using_GNNs/blob/with-boundary/Creating_Dataset/generating-graphs.ipynb)
